@@ -1,0 +1,6 @@
+------- Brand colors --------
+
+Green : #5F6247
+DarkBlue : #3E4095
+LightBlue : #0098DA
+
