@@ -1,0 +1,3 @@
+dark green : #5F6348
+dark blue: #3E4095
+light blue: #0098DA
