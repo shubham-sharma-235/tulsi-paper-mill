@@ -5444,7 +5444,7 @@ textarea.form-control {
   width: 30px;
   height: 22px;
   display: block;
-  background-image: url(../images/testimonials/quote-icon.png);
+  /* background-image: url(../images/testimonials/quote-icon.png); */
 }
 
 .testimonial__meta .testimonial__thumb img {
