@@ -6923,7 +6923,7 @@ textarea.form-control {
   margin-left: 20px;
 }
 
-.about-layout1 .about__img:after {
+/* .about-layout1 .about__img:after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -6933,7 +6933,7 @@ textarea.form-control {
   z-index: -1;
   border-top-right-radius: 3px;
   background-color: #0098DA;
-}
+} */
 
 .about-layout1 .cta__banner {
   position: absolute;
@@ -7137,3 +7137,14 @@ textarea.form-control {
   line-height: 1;
   color: #ffffff;
 }
+
+
+/* ----------------------------------------------- */
+
+.custom-heading{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
