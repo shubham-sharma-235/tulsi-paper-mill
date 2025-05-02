@@ -46,6 +46,7 @@
 html,
 body {
   overflow-x: hidden;
+  scroll-behavior: smooth!important;
 }
 
 body {
@@ -6919,8 +6920,8 @@ textarea.form-control {
 
 .about-layout1 .about__img {
   position: relative;
-  padding-left: 30px;
-  margin-left: 20px;
+  /* padding-left: 30px;
+  margin-left: 20px; */
 }
 
 /* .about-layout1 .about__img:after {
