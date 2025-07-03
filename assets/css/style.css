@@ -3805,6 +3805,12 @@ textarea.form-control {
   color: #f9f9f9;
 }
 
+.footer__widget-content img{
+  height: 6rem;
+  background-color: #fff;
+  padding: 1rem;
+}
+
 .footer__widget-content .social__icons a {
   color: #0098DA;
   font-size: 18px;
@@ -6973,7 +6979,7 @@ textarea.form-control {
   width: 150px;
   height: 150px;
   z-index: -1;
-  background-color: #0098DA;
+  background-color: #0098da57;
 }
 
 .about-layout2 .about__img:before {
@@ -6984,7 +6990,7 @@ textarea.form-control {
   width: 30px;
   height: 60px;
   z-index: 2;
-  background-color: #0098DA;
+  background-color: #0098da57;
   border-radius: 2px 2px 0 0;
 }
 
@@ -7108,7 +7114,7 @@ textarea.form-control {
     Call to Action
 --------------------------*/
 .cta__banner {
-  background-color: #0098DA;
+  background-color: #0098da57;
   max-width: 400px;
   padding: 50px;
   border-top-right-radius: 3px;
