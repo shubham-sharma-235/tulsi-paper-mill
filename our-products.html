@@ -51,6 +51,10 @@
         align-items: center;
         justify-content: center;
     }
+    
+    .product-specs-parent-container #aboutLayout2:nth-child(2), .product-specs-parent-container #aboutLayout2:nth-child(4){
+      background-color: #e7f5fbbe;
+    }
     .speciification-table-container{
         width: 94%;
     }
@@ -120,6 +124,60 @@
         font-size: 12px;
       }
     }
+    .sticky-download-ribbon {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #fff;
+      color: #000;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.15);
+      font-size: 14px;
+      flex-wrap: wrap;
+    }
+    
+    .ribbon-text {
+      font-weight: 500;
+      margin-bottom: 5px;
+    }
+    
+    .download-btn {
+      background-color: #0098DA;
+      color: #fff;
+      padding: 8px 16px;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 4px;
+      transition: background-color 0.3s, color 0.3s;
+      white-space: nowrap;
+    }
+    
+    .download-btn:hover {
+      background-color: #e6f4fb;
+      color: #0079b5;
+    }
+    
+    /* Responsive */
+    @media (max-width: 600px) {
+      .sticky-download-ribbon {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 12px;
+      }
+    
+      .download-btn {
+        width: 100%;
+        text-align: center;
+      }
+    }
+    
+    
   </style>
     
 </head>
@@ -238,84 +296,321 @@
       Product Section
     =========================== -->
     
+    <div class="sticky-download-ribbon">
+      <span class="ribbon-text">Download Specification Sheet</span>
+      <a href="./assets/tulsi-paper-mill-product-specification-sheet.pdf" class="download-btn" download>Download PDF</a>
+    </div>
     
-
     
-    <section id="aboutLayout2" class="about about-layout1 pt-0 pb-60 pt-80">
-
-      <div class="speciification-table-container">
-          
-        <h2>TULSI PAPER MILL PVT.LTD<br>Specification Sheet - Satin Gray Back</h2>
-
-        <div class="table-container">
-          <table>
-            <thead>
-              <tr>
-                <th>Substance (GSM)</th>
-                <th>Caliper (MIC)</th>
-                <th>Bulk (CC/GSM)</th>
-                <th>Stiffness MD</th>
-                <th>Stiffness CD</th>
-                <th>Ratio</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td>230</td><td>276</td><td>1.20</td><td>47</td><td>19</td><td>2.5:1</td></tr>
-              <tr><td>250</td><td>303</td><td>1.21</td><td>60</td><td>24</td><td>2.5:1</td></tr>
-              <tr><td>285</td><td>348</td><td>1.22</td><td>75</td><td>31</td><td>2.4:1</td></tr>
-              <tr><td>296</td><td>364</td><td>1.23</td><td>100</td><td>42</td><td>2.4:1</td></tr>
-              <tr><td>320</td><td>394</td><td>1.23</td><td>110</td><td>46</td><td>2.4:1</td></tr>
-              <tr><td>350</td><td>434</td><td>1.24</td><td>155</td><td>65</td><td>2.4:1</td></tr>
-              <tr><td>370</td><td>459</td><td>1.24</td><td>175</td><td>46</td><td>2.3:1</td></tr>
-              <tr><td>390</td><td>487</td><td>1.25</td><td>210</td><td>95</td><td>2.2:1</td></tr>
-              <tr><td>400</td><td>500</td><td>1.25</td><td>230</td><td>105</td><td>2.2:1</td></tr>
-              <tr><td>410</td><td>512</td><td>1.25</td><td>250</td><td>114</td><td>2.2:1</td></tr>
-              <tr><td>450</td><td>562</td><td>1.25</td><td>300</td><td>136</td><td>2.2:1</td></tr>
-            </tbody>
-          </table>
+    <div class="product-specs-parent-container">
+        <section id="aboutLayout2" class="about about-layout1 pt-0 pb-60 pt-80">
+  
+        <div class="speciification-table-container">
+            
+          <h2>TULSI PAPER MILL PVT.LTD<br>Specification Sheet - Satin Gray Back</h2>
+  
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Substance (GSM)</th>
+                  <th>Caliper (MIC)</th>
+                  <th>Bulk (CC/GSM)</th>
+                  <th>Stiffness MD</th>
+                  <th>Stiffness CD</th>
+                  <th>Ratio</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>230</td><td>276</td><td>1.20</td><td>47</td><td>19</td><td>2.5:1</td></tr>
+                <tr><td>250</td><td>303</td><td>1.21</td><td>60</td><td>24</td><td>2.5:1</td></tr>
+                <tr><td>285</td><td>348</td><td>1.22</td><td>75</td><td>31</td><td>2.4:1</td></tr>
+                <tr><td>296</td><td>364</td><td>1.23</td><td>100</td><td>42</td><td>2.4:1</td></tr>
+                <tr><td>320</td><td>394</td><td>1.23</td><td>110</td><td>46</td><td>2.4:1</td></tr>
+                <tr><td>350</td><td>434</td><td>1.24</td><td>155</td><td>65</td><td>2.4:1</td></tr>
+                <tr><td>370</td><td>459</td><td>1.24</td><td>175</td><td>46</td><td>2.3:1</td></tr>
+                <tr><td>390</td><td>487</td><td>1.25</td><td>210</td><td>95</td><td>2.2:1</td></tr>
+                <tr><td>400</td><td>500</td><td>1.25</td><td>230</td><td>105</td><td>2.2:1</td></tr>
+                <tr><td>410</td><td>512</td><td>1.25</td><td>250</td><td>114</td><td>2.2:1</td></tr>
+                <tr><td>450</td><td>562</td><td>1.25</td><td>300</td><td>136</td><td>2.2:1</td></tr>
+              </tbody>
+            </table>
+          </div>
+  
+          <div class="tolerance">
+            Tolerance: ±3% Substance, ±5% Caliper, ±10% Stiffness
+          </div>
+  
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Parameter</th>
+                  <th>Unit</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>COBB Top & Bottom</td><td>gm²</td><td>40-50 / 50-60</td></tr>
+                <tr><td>BF</td><td>Kg/cm²</td><td>14+</td></tr>
+                <tr><td>PLY Bond</td><td>Ft.lb (thousand)</td><td>80+</td></tr>
+                <tr><td>SOAT</td><td>Sec.</td><td>600+</td></tr>
+                <tr><td>Brightness</td><td>%</td><td>75+</td></tr>
+                <tr><td>Gloss (75°)</td><td>%</td><td>50+</td></tr>
+                <tr><td>Moisture</td><td>%</td><td>6.5 - 7.5</td></tr>
+                <tr><td>Surface pH</td><td>-</td><td>6.0 - 6.5</td></tr>
+                <tr><td>Smoothness</td><td>ml/min</td><td>Below 15</td></tr>
+              </tbody>
+            </table>
+          </div>
+        
+          <div class="board-construction">
+            <strong>Board Construction:</strong><br>
+            • Top coat – 10 gsm<br>
+            • Precoat – 10 gsm<br>
+            • Surface sized<br>
+            • Top liner: Un-printed white paper (Imported)<br>
+            • p/L Layer: Light printed white paper (Imported)<br>
+            • Fillers: Mixed paper (Imported & Indigenous) – 6 layers<br>
+            • Back layer: Recycled gray pulp surface sized
+          </div>
+  
         </div>
-
-        <div class="tolerance">
-          Tolerance: ±3% Substance, ±5% Caliper, ±10% Stiffness
-        </div>
-
-        <div class="table-container">
-          <table>
-            <thead>
-              <tr>
-                <th>Parameter</th>
-                <th>Unit</th>
-                <th>Value</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td>COBB Top & Bottom</td><td>gm²</td><td>40-50 / 50-60</td></tr>
-              <tr><td>BF</td><td>Kg/cm²</td><td>14+</td></tr>
-              <tr><td>PLY Bond</td><td>Ft.lb (thousand)</td><td>80+</td></tr>
-              <tr><td>SOAT</td><td>Sec.</td><td>600+</td></tr>
-              <tr><td>Brightness</td><td>%</td><td>75+</td></tr>
-              <tr><td>Gloss (75°)</td><td>%</td><td>50+</td></tr>
-              <tr><td>Moisture</td><td>%</td><td>6.5 - 7.5</td></tr>
-              <tr><td>Surface pH</td><td>-</td><td>6.0 - 6.5</td></tr>
-              <tr><td>Smoothness</td><td>ml/min</td><td>Below 15</td></tr>
-            </tbody>
-          </table>
-        </div>
+       
+      </section>
+  
+  
+      <section id="aboutLayout2" class="about about-layout1 pt-0 pb-60 pt-80">
+        <div class="speciification-table-container">
       
-        <div class="board-construction">
-          <strong>Board Construction:</strong><br>
-          • Top coat – 10 gsm<br>
-          • Precoat – 10 gsm<br>
-          • Surface sized<br>
-          • Top liner: Un-printed white paper (Imported)<br>
-          • p/L Layer: Light printed white paper (Imported)<br>
-          • Fillers: Mixed paper (Imported & Indigenous) – 6 layers<br>
-          • Back layer: Recycled gray pulp surface sized
+          <h2>TULSI PAPER MILL PVT.LTD<br>Specification Sheet - Premium Gray Back</h2>
+      
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Substance (GSM)</th>
+                  <th>Caliper (MIC)</th>
+                  <th>Bulk (CC/GSM)</th>
+                  <th>Stiffness MD</th>
+                  <th>Stiffness CD</th>
+                  <th>Ratio</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>230</td><td>278</td><td>1.20</td><td>45</td><td>18</td><td>2.5:1</td></tr>
+                <tr><td>250</td><td>300</td><td>1.20</td><td>55</td><td>22</td><td>2.5:1</td></tr>
+                <tr><td>285</td><td>348</td><td>1.22</td><td>80</td><td>32</td><td>2.5:1</td></tr>
+                <tr><td>296</td><td>364</td><td>1.23</td><td>90</td><td>40</td><td>2.4:1</td></tr>
+                <tr><td>320</td><td>394</td><td>1.23</td><td>110</td><td>50</td><td>2.4:1</td></tr>
+                <tr><td>350</td><td>434</td><td>1.24</td><td>140</td><td>63</td><td>2.4:1</td></tr>
+                <tr><td>370</td><td>459</td><td>1.24</td><td>165</td><td>73</td><td>2.4:1</td></tr>
+                <tr><td>390</td><td>484</td><td>1.24</td><td>195</td><td>87</td><td>2.2:1</td></tr>
+                <tr><td>400</td><td>496</td><td>1.24</td><td>210</td><td>95</td><td>2.2:1</td></tr>
+                <tr><td>420</td><td>525</td><td>1.25</td><td>225</td><td>102</td><td>2.2:1</td></tr>
+                <tr><td>450</td><td>563</td><td>1.25</td><td>255</td><td>116</td><td>2.2:1</td></tr>
+              </tbody>
+            </table>
+          </div>
+      
+          <div class="tolerance">
+            Tolerance: ±3% Substance, ±5% Caliper, ±10% Stiffness
+          </div>
+      
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Parameter</th>
+                  <th>Unit</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>COBB Top & Bottom</td><td>gm²</td><td>40-50 / 50-60</td></tr>
+                <tr><td>BF</td><td>Kg/cm²</td><td>14+</td></tr>
+                <tr><td>PLY Bond</td><td>Ft.lb (in thousand)</td><td>80+</td></tr>
+                <tr><td>SOAT</td><td>Sec.</td><td>550+</td></tr>
+                <tr><td>Brightness</td><td>%</td><td>75+</td></tr>
+                <tr><td>Gloss (75°)</td><td>%</td><td>45+</td></tr>
+                <tr><td>Moisture</td><td>% as per GSM</td><td>6.5 - 7.5</td></tr>
+                <tr><td>Surface pH</td><td>-</td><td>6.0 - 6.5</td></tr>
+                <tr><td>Smoothness</td><td>ml/min</td><td>15 - 20</td></tr>
+              </tbody>
+            </table>
+          </div>
+      
+          <div class="board-construction">
+            <strong>Board Construction:</strong><br>
+            • Top coat – 9 gsm<br>
+            • Precoat – 9 gsm<br>
+            • Surface sized<br>
+            • Top liner: Un-printed white paper (Imported)<br>
+            • p/L Layer: Light printed white paper (Imported)<br>
+            • Fillers: Mixed paper (Imported & Indigenous) – multiple layers<br>
+            • Back layer: Recycled gray pulp surface sized
+          </div>
+      
         </div>
+      </section>
+  
+  
+  
+      <section id="aboutLayout2" class="about about-layout1 pt-0 pb-60 pt-80">
+        <div class="speciification-table-container">
+      
+          <h2>TULSI PAPER MILL PVT.LTD<br>Specification Sheet - Satin White Back (HWC)</h2>
+      
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Substance (GSM)</th>
+                  <th>Caliper (MIC)</th>
+                  <th>Bulk (CC/GSM)</th>
+                  <th>Stiffness MD</th>
+                  <th>Stiffness CD</th>
+                  <th>Ratio</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>250</td><td>288</td><td>1.15</td><td>50</td><td>21</td><td>2.4:1</td></tr>
+                <tr><td>285</td><td>336</td><td>1.15</td><td>75</td><td>31</td><td>2.4:1</td></tr>
+                <tr><td>296</td><td>349</td><td>1.15</td><td>90</td><td>37</td><td>2.4:1</td></tr>
+                <tr><td>320</td><td>384</td><td>1.15</td><td>105</td><td>46</td><td>2.3:1</td></tr>
+                <tr><td>350</td><td>403</td><td>1.15</td><td>140</td><td>31</td><td>2.3:1</td></tr>
+                <tr><td>370</td><td>444</td><td>1.18</td><td>160</td><td>70</td><td>2.3:1</td></tr>
+                <tr><td>380</td><td>448</td><td>1.18</td><td>170</td><td>77</td><td>2.2:1</td></tr>
+                <tr><td>390</td><td>460</td><td>1.18</td><td>180</td><td>82</td><td>2.2:1</td></tr>
+                <tr><td>400</td><td>472</td><td>1.18</td><td>195</td><td>87</td><td>2.2:1</td></tr>
+                <tr><td>420</td><td>496</td><td>1.18</td><td>220</td><td>100</td><td>2.2:1</td></tr>
+                <tr><td>450</td><td>531</td><td>1.18</td><td>240</td><td>109</td><td>2.2:1</td></tr>
+              </tbody>
+            </table>
+          </div>
+      
+          <div class="tolerance">
+            Tolerance: ±3% Substance, ±5% Caliper, ±10% Stiffness
+          </div>
+      
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Parameter</th>
+                  <th>Unit</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>COBB Top & Bottom</td><td>gm²</td><td>40-50 / 50-60</td></tr>
+                <tr><td>BF</td><td>Kg/cm²</td><td>14+</td></tr>
+                <tr><td>PLY Bond</td><td>Ft.lb (in thousand)</td><td>80+</td></tr>
+                <tr><td>SOAT</td><td>Sec.</td><td>500+</td></tr>
+                <tr><td>Brightness</td><td>%</td><td>76+</td></tr>
+                <tr><td>Gloss (75°)</td><td>%</td><td>60+</td></tr>
+                <tr><td>Moisture</td><td>% as per GSM</td><td>6.5 - 7.5</td></tr>
+                <tr><td>Surface pH</td><td>-</td><td>6.0 - 6.5</td></tr>
+                <tr><td>Smoothness</td><td>ml/min</td><td>10 - 15</td></tr>
+              </tbody>
+            </table>
+          </div>
+      
+          <div class="board-construction">
+            <strong>Board Construction:</strong><br>
+            • Top coat (Blade) – 9/10 gsm<br>
+            • Precoat – 9/10 gsm<br>
+            • Surface sized<br>
+            • Top liner: Un-printed white paper (Imported)<br>
+            • p/L Layer: Light printed white paper (Imported)<br>
+            • Fillers: Mixed paper (Imported & Indigenous) – multiple layers<br>
+            • p/L Layer: Light printed white paper (Imported)<br>
+            • B/L: Un-printed white paper + 7/8 gsm coating
+          </div>
+      
+        </div>
+      </section>
+  
+      <section id="aboutLayout2" class="about about-layout1 pt-0 pb-60 pt-80">
+        <div class="speciification-table-container">
+      
+          <h2>TULSI PAPER MILL PVT.LTD<br>Specification Sheet - Royal LWC Grayback</h2>
+      
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Substance (GSM)</th>
+                  <th>Caliper (Micron)</th>
+                  <th>Bulk (CC/GSM)</th>
+                  <th>Stiffness MD</th>
+                  <th>Stiffness CD</th>
+                  <th>Ratio</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>230</td><td>276</td><td>1.20</td><td>45</td><td>18</td><td>2.5:1</td></tr>
+                <tr><td>250</td><td>300</td><td>1.20</td><td>60</td><td>24</td><td>2.5:1</td></tr>
+                <tr><td>285</td><td>348</td><td>1.22</td><td>85</td><td>35</td><td>2.4:1</td></tr>
+                <tr><td>296</td><td>364</td><td>1.23</td><td>95</td><td>40</td><td>2.4:1</td></tr>
+                <tr><td>320</td><td>394</td><td>1.23</td><td>120</td><td>50</td><td>2.4:1</td></tr>
+                <tr><td>350</td><td>434</td><td>1.24</td><td>150</td><td>63</td><td>2.4:1</td></tr>
+                <tr><td>370</td><td>459</td><td>1.24</td><td>175</td><td>76</td><td>2.3:1</td></tr>
+                <tr><td>380</td><td>471</td><td>1.24</td><td>185</td><td>84</td><td>2.2:1</td></tr>
+                <tr><td>390</td><td>484</td><td>1.24</td><td>205</td><td>93</td><td>2.2:1</td></tr>
+                <tr><td>400</td><td>496</td><td>1.24</td><td>220</td><td>100</td><td>2.2:1</td></tr>
+                <tr><td>420</td><td>525</td><td>1.25</td><td>235</td><td>107</td><td>2.2:1</td></tr>
+                <tr><td>450</td><td>563</td><td>1.25</td><td>265</td><td>120</td><td>2.2:1</td></tr>
+              </tbody>
+            </table>
+          </div>
+      
+          <div class="tolerance">
+            Tolerance: ±3% Substance, ±5% Caliper, ±10% Stiffness
+          </div>
+      
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Parameter</th>
+                  <th>Unit</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>COBB Top & Bottom</td><td>gm²</td><td>40 - 50</td></tr>
+                <tr><td>PLY Bond</td><td>Ft.lb (in thousand)</td><td>80+</td></tr>
+                <tr><td>SOAT</td><td>Sec.</td><td>150+</td></tr>
+                <tr><td>Brightness</td><td>%</td><td>74+</td></tr>
+                <tr><td>Gloss (75°)</td><td>%</td><td>35 - 40</td></tr>
+                <tr><td>Moisture</td><td>%</td><td>6.0 - 7.5</td></tr>
+                <tr><td>Smoothness (Roughness)</td><td>Micron</td><td>3.0 - 3.5</td></tr>
+                <tr><td>Smoothness</td><td>ml/min</td><td>25 - 30</td></tr>
+              </tbody>
+            </table>
+          </div>
+      
+          <div class="board-construction">
+            <strong>Board Construction:</strong><br>
+            • Top coat – 11/12 gsm<br>
+            • Surface sized<br>
+            • Top liner: Un-printed white paper (Imported)<br>
+            • p/L Layer: Light printed white paper (Imported)<br>
+            • Fillers: Mixed paper (Imported & Indigenous) – multiple layers<br>
+            • Back layer: Gray pulp surface sized
+          </div>
+      
+        </div>
+      </section>
+    </div>
+    
 
-      </div>
-     
-    </section>
+
+    
+    
+    
+    
     
 
     
