@@ -2526,6 +2526,7 @@ textarea.form-control {
   padding: 13px 0 12px;
   font-size: 14px;
   color: #51668a;
+  background-color: #ebf6fb;
 }
 
 /* Navbar */
@@ -2549,7 +2550,6 @@ textarea.form-control {
   padding: 0 20px;
   height: 100px;
   line-height: 100px;
-  background-color: #f3f9fc;
 }
 
 .navbar .logo-dark {
