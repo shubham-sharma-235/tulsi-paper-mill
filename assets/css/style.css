@@ -7155,3 +7155,20 @@ textarea.form-control {
   flex-direction: column;
 }
 
+@media(max-width:500px){
+  .background-banner {
+    min-height: 500px;
+  }
+  .cta__banner {
+    background-color: #0098da57;
+    max-width: 270px;
+    padding: 20px;
+    border-top-right-radius: 3px;
+  } 
+  .page-title {
+    height: 50vh;
+    background-size: 60%;
+  }
+}
+
+
